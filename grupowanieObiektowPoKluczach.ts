@@ -27,4 +27,29 @@ const inventory: InventoryItem[] = [
 const result2 = groupBy(inventory, ({ type }) => type);
 console.log(result2);
 
+//alternative option - without test
+
+interface Person {
+    name: string;
+    age: number;
+}
+
+const people: Person[] = [
+    { name: "Alice", age: 25 },
+    { name: "Bob", age: 30 },
+    { name: "Charlie", age: 20 },
+];
+
+const sortedPeople = people.reduce((sortedArray: Person[], person: Person) => {
+    const insertIndex = sortedArray.findIndex((p) => person.age < p.age);
+    if (insertIndex === -1) {
+        sortedArray.push(person);
+    } else {
+        sortedArray.splice(insertIndex, 0, person);
+    }
+    return sortedArray;
+}, []);
+
+console.log(sortedPeople);
+
 
