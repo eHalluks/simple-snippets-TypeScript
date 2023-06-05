@@ -1,0 +1,19 @@
+{
+  "name": "snippets-ts",
+  "version": "1.0.0",
+  "description": "Snippets TS",
+  "main": "index.ts",
+  "scripts": {},
+  "keywords": [
+    "snippets",
+    "snippet",
+    "ts",
+    "typescript"
+  ],
+  "author": "eHalluks",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.2.5",
+    "typescript": "^5.1.3"
+  }
+}
