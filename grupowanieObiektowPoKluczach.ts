@@ -26,3 +26,5 @@ const inventory: InventoryItem[] = [
 
 const result2 = groupBy(inventory, ({ type }) => type);
 console.log(result2);
+
+
